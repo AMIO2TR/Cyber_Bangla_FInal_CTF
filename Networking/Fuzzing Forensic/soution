@@ -1,0 +1,18 @@
+Fuzzing Forensics
+Point: 100
+You are tasked with identifying the specific tool utilized for directory fuzzing. Analyze the available data, logs, or system traces to pinpoint the exact tool employed in the fuzzing process."
+
+Flag Format: CBCTF{name_name}
+Solution: 
+I know that gobuster is a fast and efficient brute-force tool primarily used for enumerating directories, files, DNS subdomains, and virtual hosts. 
+So, I search the gobuster tool in chall (1).pcapng
+Command: strings chal\ \(1\).pcapng|grep -i "gobuster" 
+output: 
+User-Agent: gobuster/3.6
+User-Agent: gobuster/3.6
+ 
+Then I find this 😎
+So, the flag is CBCTF{gobuster}
+
+
+
