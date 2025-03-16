@@ -1,1 +1,18 @@
+X OR Mystery
+point: 200
 
+Challenge description: 
+A secret message has been encrypted using a mysterious technique. Can you uncover the original text?
+
+Oüù^JÅÃ:yÌål=ßÝUdÈoSÉÒkxáÎb?á×kbÃ
+
+Flag Format:CBCTF{**********************}
+
+solution: 
+
+Here we need to xor.  So I think that the host of this ctf is cyber bangla, it can be seen in cyberchef with the key or not.  I see that it has been matched.
+
+ciphertext: Oüù^JÅÃ:yÌål=ßÝUdÈoSÉÒkxáÎb?á×kbÃ
+key: CYBER BANGLA
+
+flag: CBCTF{y0ur_f1ag_h3re_what_th3_man}
